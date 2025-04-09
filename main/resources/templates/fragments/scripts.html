@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <!-- Common Scripts -->
+  <div th:fragment="common-scripts">
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      
+      <!-- Main JS -->
+      <script th:src="@{/js/main.js}"></script>
+  </div>
+  
+  <!-- Form Validation Scripts -->
+  <div th:fragment="form-validation">
+      <script th:src="@{/js/form-validation.js}"></script>
+  </div>
+  
+  <!-- Shopping Cart Scripts -->
+  <div th:fragment="shopping-cart">
+      <script th:src="@{/js/shopping-cart.js}"></script>
+  </div>
+  
+  <!-- Product Gallery Scripts -->
+  <div th:fragment="product-gallery">
+      <script th:src="@{/js/product-gallery.js}"></script>
+  </div>
+  
+  <!-- Checkout Scripts -->
+  <div th:fragment="checkout">
+      <script th:src="@{/js/checkout.js}"></script>
+  </div>
+  
+  <!-- User Profile Scripts -->
+  <div th:fragment="user-profile">
+      <script th:src="@{/js/user-profile.js}"></script>
+  </div>
+  
+  <!-- Admin Scripts -->
+  <div th:fragment="admin">
+      <!-- DataTables -->
+      <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+      <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+      
+      <!-- Chart.js -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <!-- Admin JS -->
+      <script th:src="@{/js/admin.js}"></script>
+  </div>
+  
+  <!-- Product Filter Scripts -->
+  <div th:fragment="product-filter">
+      <!-- noUiSlider -->
+      <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.0/dist/nouislider.min.js"></script>
+      
+      <!-- Product Filter JS -->
+      <script th:src="@{/js/product-filter.js}"></script>
+  </div>
+  
+  <!-- Order Tracking Scripts -->
+  <div th:fragment="order-tracking">
+      <script th:src="@{/js/order-tracking.js}"></script>
+  </div>
+</body>
+</html>
